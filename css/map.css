@@ -1,0 +1,144 @@
+
+
+/*MAP*/
+div.map-wrapper {
+  margin-bottom: 40px;
+}
+div#map {
+  width: 845px;
+  height: 550px;
+}
+svg {
+  position: relative;
+}
+
+/*SUB UNITS*/
+path.subunit {
+  fill: #ddd;
+  stroke: #3a403d;
+  stroke-width: .5px;
+  transition: fill .75s;
+}
+path.subunit:hover, path.subunit.highlight {
+  stroke: #3a403d;
+  stroke-width: 1.5px;
+}
+path.subunit-boundary {
+  fill: none;
+  stroke: #3a403d;
+}
+
+/*PLACES*/
+path.place {
+  width: 2px;
+}
+text.place-label {
+  font-size: .8em;
+  text-shadow: 0px 0px 2px #fff;
+}
+
+/*QUINTIES*/
+path.bucket-1 {
+  fill: #f1eef6;
+}
+path.bucket-2 {
+  fill: #bdc9e1;
+}
+path.bucket-3 {
+  fill: #74a9cf;
+}
+path.bucket-4 {
+  fill: #2b8cbe;
+}
+path.bucket-5 {
+  fill: #045a8d;
+}
+
+/*TOOLTIP*/
+div.tip {
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 200px;
+  position: absolute;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+div.tip .title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+div.tip .subtitle {
+  margin-top: 10px;
+  border-bottom: 1px solid #3a403d;
+}
+div.tip .tip-item {
+  font-size: .8em;
+  height: 20px
+}
+div.tip .tip-item.total {
+  font-style: italic;
+  font-size: .9em;
+}
+div.tip .tip-item .key,.value {
+  float: left;
+}
+div.tip .tip-item .key {
+  width: 80%;
+}
+div.tip .tip-item .value {
+  width: 20%;
+  margin-bottom: 4px;
+  text-align: right;
+}
+div.tip .tip-item .value .swatch {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 4px;
+  border: 1px solid #3a403d;
+}
+
+/*LEGEND*/
+.legend-container {
+
+}
+div.legend {
+  height: 40px;
+  margin-left: 15px;
+  font-weight: 300;
+}
+.legend-title {
+  margin-bottom: 5px;
+}
+.legend .swatch {
+  display: inline-block;
+  padding-left: 3px;
+  outline: 1px solid #3a403d;
+  height: 10px;
+}
+.legend .swatch:last-of-type {
+  outline: none;
+}
+.swatch.bucket-1 {
+  background: #f1eef6;
+}
+.swatch.bucket-2 {
+  background: #bdc9e1;
+}
+.swatch.bucket-3 {
+  background: #74a9cf;
+}
+.swatch.bucket-4 {
+  background: #2b8cbe;
+}
+.swatch.bucket-5 {
+  background: #045a8d;
+}
+.legend .label-container {
+  margin-left: -30px;
+  margin-right: 0px;
+  font-size: .7em;
+}
