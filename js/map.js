@@ -60,7 +60,7 @@ function legend(data){
 function colors(data,buckets){
 
   // max
-  var max = d3.max(data, function(d){return d.attacks;});
+  var max = buckets[buckets.length-1];
 
   //assign quintiles
   for (var i = 0;i<buckets.length;i++){
@@ -76,6 +76,7 @@ function colors(data,buckets){
             $('path.subunit.district-'+d.censuscode).attr('bucket',i+1);
           }
         } else {
+          //console.log(d.censuscode);
           $('path.subunit.district-'+d.censuscode).attr('bucket',5);
         }
       }

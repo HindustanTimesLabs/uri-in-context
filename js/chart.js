@@ -1,8 +1,6 @@
 var margin = {top: 40, right: 20, bottom: 30, left: 40},
     width = $('#month-chart').width() - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-//var formatPercent = d3.format(".0%");
+    height = 400 - margin.top - margin.bottom;
 
 var x = d3.scaleBand()
     .range([0, width], .1);
@@ -15,7 +13,7 @@ var xAxis = d3.axisBottom()
 
 var yAxis = d3.axisLeft()
     .scale(y)
-    //.tickFormat(formatPercent);
+    .ticks(5);
 
 var svg = d3.select("#month-chart").append("svg")
     .attr("width", width + margin.left + margin.right)
