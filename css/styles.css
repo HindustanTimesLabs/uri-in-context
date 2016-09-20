@@ -1,3 +1,6 @@
+body,html {
+  overflow-x: hidden;
+}
 body {
   margin-top: 40px;
   font-size: 16px;
@@ -39,13 +42,18 @@ body {
 
 /*HEAD*/
 .heads {
-  text-align: center;
+  margin-top: 20px;
+}
+.superhead {
+  text-transform: uppercase;
+  color: #e74c3c;
+  font-size: 1.3em;
+  font-weight: 900;
 }
 .headline {
   font-weight: 900;
   font-size: 3em;
-  line-height: 1.4em;
-  margin-bottom: 10px;
+  line-height: 1.2em;
 }
 .byline {
   font-size: 1.4em;
@@ -66,6 +74,9 @@ body {
 }
 
 /*GRAPHIC STYLES*/
+.graphic-wrapper {
+  margin-bottom: 20px;
+}
 .graphic-wrapper .headline {
 	font-family: Lato;
 	font-weight: 900;
@@ -82,14 +93,108 @@ body {
   font-size: 1.2em;
 }
 
-/*FOOTER*/
-.navbar-foot li a {
-	font-size: .75em;
+.source {
+  color: #777;
 }
+
+/*RELATED*/
+.related-wrapper a {
+  cursor: pointer;
+}
+.related-title {
+  margin-top: 20px;
+  border-top: 2px solid #3a403d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+.related-story-image-wrapper {
+  margin-bottom: 5px;
+}
+.related-story-headline {
+  font-size: 1.1em;
+}
+.related-story-dateline {
+  font-size: .9em;
+  color: #777;
+}
+
+/*FOOTER*/
+footer {
+  margin-bottom: -30px;
+}
+.footer-basic-centered {
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 18px 'Lato',sans-serif;
+  padding: 40px;
+  margin-top: 40px;
+}
+footer a {
+  color: #fff!important;
+}
+
 
 /*first break point*/
 @media only screen and (max-width: 991px){
   .graphic-wrapper .description {
     margin-top: 0px;
   }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	/*nav*/
+	.navbar-brand img {
+		width: 25px;
+	}
+	.navbar-share {
+		margin-top: -35px;
+		padding-top: 0px;
+	}
+
+	/*heads*/
+	.headline {
+		font-family: "Lato", sans-serif;
+		font-weight: 900;
+		font-size: 1.9em;
+    margin-bottom:10px;
+		line-height: 1.2em;
+	}
+  .dateline {
+    margin-bottom: 20px;
+  }
+
+  /*graphic wrapper*/
+  .graphic-wrapper .headline {
+    font-size: 1.4em;
+    line-height: 1.2em;
+  }
+
+	/*copy*/
+	.copy p {
+		font-size: 1em;
+	}
+
+	/*chart*/
+	.chart-wrapper {
+		margin-left:-15px;
+		margin-right:-15px;
+		width: auto;
+	}
+	.chart-title {
+		font-size: 1.4em;
+	}
+	/*related*/
+	.related-story {
+		margin-bottom: 30px;
+	}
+
 }

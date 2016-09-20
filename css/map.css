@@ -2,7 +2,6 @@
 
 /*MAP*/
 div.map-wrapper {
-  margin-bottom: 40px;
 }
 div#map {
   width: 845px;
@@ -141,4 +140,13 @@ div.legend {
   margin-left: -30px;
   margin-right: 0px;
   font-size: .7em;
+}
+
+@media only screen and (max-width : 480px) {
+  div#map {
+    height: 240px;
+  }
+  text.place-label {
+    font-size: .4em;
+  }
 }

@@ -235,12 +235,6 @@
 			}, {
 				"type": "Point",
 				"properties": {
-					"name": "Gujrat"
-				},
-				"coordinates": [3608, 8443]
-			}, {
-				"type": "Point",
-				"properties": {
 					"name": "Sahiwal"
 				},
 				"coordinates": [3310, 7782]
@@ -250,12 +244,6 @@
 					"name": "Rahim Yar Khan"
 				},
 				"coordinates": [2446, 7003]
-			}, {
-				"type": "Point",
-				"properties": {
-					"name": "Mansehra"
-				},
-				"coordinates": [3336, 9052]
 			}, {
 				"type": "Point",
 				"properties": {
@@ -1015,12 +1003,6 @@
 			}, {
 				"type": "Point",
 				"properties": {
-					"name": "Rawalpindi"
-				},
-				"coordinates": [3288, 8796]
-			}, {
-				"type": "Point",
-				"properties": {
 					"name": "Bahawalpur"
 				},
 				"coordinates": [2869, 7339]
@@ -1513,12 +1495,6 @@
 			}, {
 				"type": "Point",
 				"properties": {
-					"name": "Amritsar"
-				},
-				"coordinates": [3849, 8118]
-			}, {
-				"type": "Point",
-				"properties": {
 					"name": "Varanasi"
 				},
 				"coordinates": [6345, 5935]
@@ -1552,12 +1528,6 @@
 					"name": "Coimbatore"
 				},
 				"coordinates": [4488, 976]
-			}, {
-				"type": "Point",
-				"properties": {
-					"name": "Lahore"
-				},
-				"coordinates": [3690, 8090]
 			}, {
 				"type": "Point",
 				"properties": {

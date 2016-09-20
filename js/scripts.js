@@ -1,3 +1,13 @@
+// calc breakpoint
+function calcBreak(x){
+  x<480 ? y = 'sm' : y = 'md';
+  return y;
+}
+var breakpoint = calcBreak($(window).width());
+$(window).resize(function(){
+  var breakpoint = calcBreak($(window).width());
+});
+
 $(document).ready(function(){
   // mobile logo
   function mobileLogo(x) {
@@ -16,7 +26,7 @@ $(document).ready(function(){
   // sharing
   var url = window.location.href;
   //share hrefs
-  var twitterShare = 'https://twitter.com/home?status=UP%202012%20election%20map%20'+ url;
+  var twitterShare = 'https://twitter.com/home?status=In some ways, the Uri attack was typical. '+ url + ' via @htTweets';
   $('.twitter-share').attr('href', twitterShare);
   var facebookShare = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
   $('.facebook-share').attr('href', facebookShare);

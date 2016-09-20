@@ -140,7 +140,7 @@ function tip(data){
       if (d.district != 'Pakistan Occupied Kashmir'){
         $('.tip').append('<div class="tip-item total"><div class="key">Total attacks</div><div class="value"><div class="swatch" style="background:'+color+'"></div>'+d.attacks+'</div></div>');
         $('.tip').append('<div class="tip-item subtitle total"><div class="key">Total fatalities</div><div class="value">'+d.total+'</div></div>');
-        $('.tip').append('<div class="tip-item"><div class="key">Militants / terrorists</div><div class="value">'+d.militant+'</div></div>');
+        $('.tip').append('<div class="tip-item"><div class="key">Militants</div><div class="value">'+d.militant+'</div></div>');
         $('.tip').append('<div class="tip-item"><div class="key">Indian security forces</div><div class="value">'+d.secforce+'</div></div>');
         $('.tip').append('<div class="tip-item"><div class="key">Civilians</div><div class="value">'+d.civilian+'</div></div>');
       }
@@ -157,6 +157,19 @@ function tip(data){
   });
 }
 
+function mapScale(bp){
+  bp == "sm" ? y = 2500 : y = 6500;
+  return y;
+}
+function mapCenter(bp){
+  bp == 'sm' ? y = 32 : y = 34.85;
+  return y;
+}
+function mapRotate(bp){
+  bp == 'sm' ? y = -85.5 : y = -77.55;
+  return y;
+}
+
 $(document).ready(function(){
 
   var width = $('.map-wrapper').width(),
@@ -164,10 +177,10 @@ $(document).ready(function(){
     centered;
 
   var projection = d3.geoAlbers()
-      .center([0,34.85])
-      .rotate([-77.55,0])
+      .center([0,mapCenter(breakpoint)])
+      .rotate([mapRotate(breakpoint),0])
       .parallels([50, 60])
-      .scale(6500);
+      .scale(mapScale(breakpoint));
 
   var path = d3.geoPath()
       .projection(projection)
